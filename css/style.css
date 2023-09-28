@@ -1,3 +1,17 @@
+/* UTILITIES */
+
+:root {
+    --blue:#051E34;
+    --light-blue:#1B72E8;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
 /* NAVBAR */
 
 nav {
@@ -30,21 +44,27 @@ nav {
     padding: 10px;
 }
 
-/* UTILITIES */
+/* MAIN CONTENT */
 
-:root {
-    --blue:#051E34;
-    --light-blue:#1B72E8;
+main {
+    overflow-y: auto;
 }
 
-#app {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+.bg-lightblue {
+    background-color: var(--light-blue);
+}
+
+.student {
+    line-height: 2.5rem;
+    height: 100%;
+}
+
+.bg-blue-badge {
+    background-color: #165BBA;
 }
 
 /* DEBUG */
+
 .debug body {
     background-color: lightcoral;
     overflow-y: auto;
