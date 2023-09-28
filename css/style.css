@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden;
 }
 
 /* NAVBAR */
@@ -46,7 +45,7 @@ nav {
 
 /* MAIN CONTENT */
 
-main {
+container-fluid {
     overflow-y: auto;
 }
 
