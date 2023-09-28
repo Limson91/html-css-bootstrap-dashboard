@@ -8,11 +8,40 @@ nav {
     height: 40px;
 }
 
+/* SIDEBAR */
+
+.sidebar {
+    overflow: hidden;
+    background-color: var(--blue);
+    background-image: url(../img/sidebar-bg.png);
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-sidebar {
+    width: 150px;
+}
+
+.menu-sidebar {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
 /* UTILITIES */
 
 :root {
     --blue:#051E34;
     --light-blue:#1B72E8;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* DEBUG */
