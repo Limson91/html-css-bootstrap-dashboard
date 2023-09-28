@@ -1,0 +1,38 @@
+/* NAVBAR */
+
+nav {
+    height: 70px;
+}
+
+.mobile-logo {
+    height: 40px;
+}
+
+/* UTILITIES */
+
+:root {
+    --blue:#051E34;
+    --light-blue:#1B72E8;
+}
+
+/* DEBUG */
+.debug body {
+    background-color: lightcoral;
+    overflow-y: auto;
+}
+
+.debug .container {
+    border: 1px solid red;
+}
+
+.debug .row {
+    border: 1px solid blue;
+}
+
+.debug [class^='col'] {
+    border: 1px solid green;
+}
+
+.debug .sidebar {
+    background-color: var(--blue);
+}
