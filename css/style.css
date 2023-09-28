@@ -78,6 +78,13 @@ main {
     text-align: left;
 }
 
+/* CARD */
+
+#card-faq .accordion-button:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+
 /* DEBUG */
 
 .debug body {
