@@ -107,7 +107,7 @@
         <!--Main Content-->    
         <main class="flex-grow-1">
 
-            <!--Offcanvas-->
+            
             <div class="container-fluid">
                 <div class="bg-lightblue row text-white py-4">
 
@@ -117,6 +117,7 @@
                             <i class="fa-solid fa-plus" data-bs-toggle="offcanvas" href="#new_student_panel" role="button" aria-controls="new_student_panel"></i>
                         </a>
 
+                        <!--Offcanvas-->
                         <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="new_student_panel" aria-labelledby="new_student_panel_label">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="new_student_panel_label">Inserisci un nuovo Studente</h5>
@@ -127,6 +128,11 @@
                                 <form class="row g-2">
                                     <div class="col-6">
                                         <label for="name" class="form-label fw-bold">Nome</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="name" class="form-label fw-bold">Cognome</label>
                                         <input type="text" class="form-control" id="name">
                                     </div>
 
@@ -144,16 +150,16 @@
                                     </div>
 
                                     <div class="col-6">
-                                        <label for="email_2" class="form-label fw-bold">Indirizzo <br> Email </label>
+                                        <label for="email_1" class="form-label fw-bold">Indirizzo Email</label>
                                         <div class="input-group">
-                                            <span class="input-group-text" id="email_2">@</span>
-                                            <input type="email" class="form-control" aria-label="Indirizzo_Email" aria-describedby="email_2">
+                                            <span class="input-group-text" id="email_1">@</span>
+                                            <input type="email" class="form-control" aria-label="Email" aria-describedby="email_1">
                                         </div>
                                     </div>
 
                                     <div class="col-6">
-                                        <label for="password_2" class="form-label fw-bold"><br>Password</label>
-                                        <input type="password" class="form-control" id="password_2">
+                                        <label for="password_1" class="form-label fw-bold">Password</label>
+                                        <input type="password" class="form-control" id="password_1">
                                     </div>
 
                                     <div class="col-12">
@@ -184,8 +190,7 @@
 
                                     <div class="col-12">
                                         <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="validate">
-                                            <label class="form-check-label fw-bold" for="validate">Seleziona per proseguire</label>
+                                            <label class="form-check-label fw-bold" for="validate"><input type="checkbox" class="form-check-input" id="validate">Seleziona per proseguire</label>
                                         </div>
                                     </div>
 
@@ -201,11 +206,11 @@
                     <div class="bd_breadcrumbs col-md-4 mb-3">
                         <div class="pd_plan_summary mb-2">
                             <span class="h1">Boolean</span>
-                            <a href="#"><span class="badge rounded-pill">Piano</span></a>
+                            <a href="#"><span class="badge rounded-pill bg-blue-badge">Piano</span></a>
                         </div>
 
                         <div class="db_plan_apps mb-3">
-                            <a href="#"><span class="badge rounded-pill pd_badge_blue">App</span></a>
+                            <a href="#"><span class="badge rounded-pill bg-blue-badge">App</span></a>
                             <span class><i class="fa-solid fa-angles-right"></i></span>
                             <a href="#"><span class="badge rounded-pill bd_badge_blue d-lg-none"><i class="fa-solid fa-plus"></i></span></a>
                             <a href="#"><span class="badge rounded-pill bd_badge_blue d-none d-lg-inline-block">Boolean mobile app</span></a>
@@ -218,11 +223,373 @@
                         <h2>125</h2>
                     </div>
                 </div>
-            </div>  
+            </div> 
+            
+            
+                        <!-- Card: classes --> 
+            <div class="container-fluid">
+                <div class="row py-4">
+                    <div class="col-12 col-lg">
+                        <div id="table-row" class="card mb-4">
+                            <div class="card-header">
+                                <h1 class="mb-3">Prossime classi</h1>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col" class="d-none d-md-table-cell text-center">Data inizio</th>
+                                            <th scope="col" class="d-none d-md-table-cell text-center">ROI</th>
+                                            <th scope="col" class="text-center">Stato</th>
+                                            <th scope="col" class="text-center">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 75
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">15 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 76
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">16 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 77
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">17 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-warning text-white">process</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 78
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">18 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 79
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">19 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-danger">failed</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 80
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">20 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 81
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">21 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-danger">failed</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 82
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">22 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Classes --> 
+            <div class="container-fluid">
+                <div class="row py-4">
+                    <div class="col-12 col-lg">
+                        <div id="table-row" class="card mb-4">
+                            <div class="card-header">
+                                <h1 class="mb-3">Prossime classi</h1>
+                            </div>
+                            
+                            <div class="card-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col" class="d-none d-md-table-cell text-center">Data inizio</th>
+                                            <th scope="col" class="d-none d-md-table-cell text-center">ROI</th>
+                                            <th scope="col" class="text-center">Stato</th>
+                                            <th scope="col" class="text-center">Azioni</th>
+                                        </tr>    
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 75
+                                            </th>
+                                            
+                                            <td scope="d-none d-md-table-cell text-center">15 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 76
+                                            </th>
+                                                        
+                                            <td scope="d-none d-md-table-cell text-center">16 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 77
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">17 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge text-bg-warning text-white">process</span>
+                                            </td>
+                                                
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                                    
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 78
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">18 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                                
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 79
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">19 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">     
+                                               <span class="badge bg-danger">failed</span>
+                                            </td>
+
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 80
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">20 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 81
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">21 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-danger">failed</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="me-2" height="24" src="./img/class-avatar.jpg" alt="#">Classe 82
+                                            </th>
+                                            <td scope="d-none d-md-table-cell text-center">22 febbraio 2021</td>
+                                            <td scope="d-none d-md-table-cell text-center">20%</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success">done</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-outline-secondary p-1 px-2 me-1">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
 
     <!--Script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

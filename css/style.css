@@ -63,6 +63,21 @@ main {
     background-color: #165BBA;
 }
 
+/* OFFCANVAS */
+
+.offcanvas {
+    color: black;
+}
+
+#table-row th[scope="row"] {
+    line-height: 10px;
+    vertical-align: middle;
+}
+
+#table-row {
+    text-align: left;
+}
+
 /* DEBUG */
 
 .debug body {
